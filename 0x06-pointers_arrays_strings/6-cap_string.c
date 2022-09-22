@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_strlen - returns the length of a string
+ * _strlen - returns the length of a string
  * @s: string
  * Return: returns length as integer;
  */
@@ -28,7 +28,7 @@ char *cap_string(char *str)
 
 	while (str[++index])
 	{
-		while (!(str[index] >= 'a' && str[index] <= 'z'))
+		while (!(str[index] >= 'a') && (str[index] <= 'z'))
 			index++;
 
 		if (str[index - 1] == ' ' ||
